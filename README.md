@@ -123,8 +123,14 @@ newsletter_subscription_flow/
 
 ## 🛠️ Technologies
 
+
 - **Frontend**: React, Vite, CSS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Version Control**: Git/GitHub
+
+
+![Screenshot 2024-11-19 010137](https://github.com/user-attachments/assets/72bf37a5-388e-4889-8b9d-52e7a1750b61)
+
+![image](https://github.com/user-attachments/assets/b2fff9cc-1acf-4129-b33b-adbb787505e4)
 
