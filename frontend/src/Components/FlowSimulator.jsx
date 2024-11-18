@@ -3,11 +3,11 @@ import axios from 'axios';
 
 const FlowSimulator = ({ setFlowId, setLogs }) => {
   const [isFlowRunning, setIsFlowRunning] = useState(false);
-
+  const url = "https://newsletter-subscription-renewal-flow.onrender.com"
   const startFlow = async () => {
     setIsFlowRunning(true);
     try {
-      const { data } = await axios.post('http://localhost:5000/api/flows/start');
+      const { data } = await axios.post('url/api/flows/start');
       setFlowId(data._id);
       setLogs(data.log);
 
@@ -37,8 +37,8 @@ const FlowSimulator = ({ setFlowId, setLogs }) => {
   };
 
   const updateFlow = async (id, status, message) => {
-    await axios.put(`http://localhost:5000/api/flows/update/${id}`, { status, message });
-    const { data } = await axios.get(`http://localhost:5000/api/flows/${id}`);
+    await axios.put(`url/api/flows/update/${id}`, { status, message });
+    const { data } = await axios.get(`url/flows/${id}`);
     setLogs(data.log);
   };
 
